@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <h1>Weather App</h1>
+            <div class="cloudLogo">
+                <i class="fa-solid fa-cloud"></i>
+            </div>
+        </nav>
+        <div class="input-container">
+            <input type="text" placeholder="Enter City Name" id="input-box">
+            <button id="search-button" onclick="searchClick()">
+                Search
+            </button>
+        </div>
+        <p id="location-available">Current Location not available</p>
+        <div class="weather-container" id="weather-box">
+            <h3>Weather</h3>
+            <div class="image-container">
+                <img src="" id="weatherImg">
+            </div>
+            <h1>
+                <span id="temp">
+                </span>°C
+            </h1>
+            <p id="description"></p>
+            <p id="location"></p>
+            <div class="bottom-container">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="bottom-row">
+                        <p id="humidity"></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="bottom-row">
+                        <p id="wind"></p>
+                        <p>Wind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="NotFound">
+            <div class="image-container">
+                <img src="" id="notFoundImg">
+            </div>
+            <p id="notfoundDesc"></p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/80b9f8ab25.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
